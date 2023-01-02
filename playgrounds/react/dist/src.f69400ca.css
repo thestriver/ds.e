@@ -225,23 +225,23 @@
  *
  */
 .dse-margin-none {
-  margin: 0rem;
+  margin: 0;
 }
 
 .dse-margin-left-none {
-  margin-left: 0rem;
+  margin-left: 0;
 }
 
 .dse-margin-right-none {
-  margin-right: 0rem;
+  margin-right: 0;
 }
 
 .dse-margin-top-none {
-  margin-top: 0rem;
+  margin-top: 0;
 }
 
 .dse-margin-bottom-none {
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 
 .dse-margin-xxxs {
@@ -555,8 +555,8 @@
 }
 
 .dse-select__overlay {
-  padding: 0rem;
-  margin: 0rem;
+  padding: 0;
+  margin: 0;
   border: 1px solid var(--dse-form-border-color, #f1f2f3);
   background-color: var(--dse-form-bg-color, #fff);
   z-index: 99;
@@ -692,11 +692,11 @@
  *
  */
 .dse-width-none {
-  width: 0rem;
+  width: 0;
 }
 
 .dse-height-none {
-  height: 0rem;
+  height: 0;
 }
 
 .dse-width-xxxs {

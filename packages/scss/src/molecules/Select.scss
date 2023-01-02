@@ -1,77 +1,78 @@
 @import "foundation/all";
 
 .dse-select {
-  display: flex;
-  flex-direction: column;
-
-  position: relative;
-
-  &__label {
-    @include padding("xs");
-    align-items: center;
-    background: $form-bg-color;
-    border: 1px solid $form-border-color;
-
-    cursor: pointer;
     display: flex;
+    flex-direction: column;
 
-    font-family: $body-font-family;
-    justify-content: space-between;
-  }
+    position: relative;
 
-  &__caret {
-    transition: all 250ms ease;
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-    // &--open {
-    //   transform: rotate(180deg);
-    // }
+        @include padding('xs');
+        border: 1px solid $form-border-color;
+        background: $form-bg-color;
 
-    // &--closed {
-    //   transform: rotate(0deg);
-    // }
-  }
+        font-family: $body-font-family;
 
-  &__overlay {
-    @include padding("none");
-    @include margin("none");
-    background-color: $form-bg-color;
+        cursor: pointer;
+    }
 
-    border: 1px solid $form-border-color;
+    &__caret {
+        transition: all 250ms ease;
 
-    box-shadow: map-get($shadows, "base");
-    display: none;
+        &--open {
+            transform: rotate(180deg);
+        }
 
-    list-style-type: none;
+        &--closed {
+            transform: rotate(0deg);
+        }
+    }
 
-    position: absolute;
+    &__overlay {
+        @include padding('none');
+        @include margin('none');
 
-    width: 100%;
-    z-index: 99;
-  }
+        border: 1px solid $form-border-color;
+        background-color: $form-bg-color;
+        z-index: 99;
+        display: none;
 
-  &__option {
-    @include padding("xs");
-    align-items: center;
+        list-style-type: none;
 
-    box-sizing: border-box;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
+        box-shadow: map-get($shadows, 'base');
 
-  &__option--highlighted {
-    background-color: $form-bg-color-hover;
-  }
+        position: absolute;
 
-  &__option--selected {
-    background-color: $form-bg-option-selected;
-    color: $form-color-option-selected;
-  }
+        width: 100%;
+    }
+
+    &__option {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        cursor: pointer;
+        @include padding('xs');
+
+        box-sizing: border-box;
+    }
+
+    &__option--highlighted {
+        background-color: $form-bg-color-hover;
+    }
+
+    &__option--selected {
+        background-color: $form-bg-option-selected;
+        color: $form-color-option-selected;
+    }
 }
 
-.dse-select-overlay {
-  &--open {
-    display: block;
-  }
+.dse-select__overlay {
+    &--open {
+        display: block;
+    }
 }

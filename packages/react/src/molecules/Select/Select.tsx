@@ -138,7 +138,7 @@ const Select: React.FunctionComponent<SelectProps> = ({ options = [], label = 'P
         </button>
 
         {(
-            <ul role='menu' aria-hidden={isOpen ? undefined : false} id='dse-select-list' style={{ top: overlayTop }} className={`dse-select-overlay ${isOpen ? 'dse-select-overlay--open' : ''}`}>
+            <ul role='menu' aria-hidden={isOpen ? undefined : false} id='dse-select-list' style={{ top: overlayTop }} className={`dse-select__overlay ${isOpen ? 'dse-select__overlay--open' : ''}`}>
                 {options.map((option, optionIndex) => {
                     const isSelected = selectedIndex === optionIndex;
                     const isHighlighted = highlightedIndex === optionIndex;
