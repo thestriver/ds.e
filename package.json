@@ -5,8 +5,11 @@
   "author": "codevore <wannabeamumin@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
     "commitizen": "^4.2.6",
     "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.0",
     "lerna": "^6.3.0"
   },
   "private": true,
@@ -24,11 +27,17 @@
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
     "publish": "yarn test && yarn build && npx lerna publish",
-    "commit": "yarn git-cz"
+    "commit": "yarn git-cz",
+    "commit-msg": "commitlint --edit"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
