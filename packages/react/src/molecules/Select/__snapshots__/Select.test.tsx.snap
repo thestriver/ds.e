@@ -34,7 +34,7 @@ exports[`snapshot of the base state 1`] = `
     </button>
     <ul
       aria-hidden="false"
-      class="dse-select__overlay "
+      class="dse-select-overlay "
       id="dse-select-list"
       role="menu"
       style="top: 10px;"
@@ -123,7 +123,7 @@ exports[`snapshot of the options menu open state 1`] = `
       </svg>
     </button>
     <ul
-      class="dse-select__overlay dse-select__overlay--open"
+      class="dse-select-overlay dse-select-overlay--open"
       id="dse-select-list"
       role="menu"
       style="top: 10px;"
@@ -212,7 +212,7 @@ exports[`snapshot of the selected option state 1`] = `
     </button>
     <ul
       aria-hidden="false"
-      class="dse-select__overlay "
+      class="dse-select-overlay "
       id="dse-select-list"
       role="menu"
       style="top: 10px;"

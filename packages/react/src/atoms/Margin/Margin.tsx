@@ -33,9 +33,7 @@ const Margin: React.FC<MarginProps> = ({ space = 'xxxs', left, right, top, botto
         className = `${className} dse-margin-bottom-${space}`;
     }
 
-    return <div className={className}>
-        {children}
-    </div>;
+    return <div className={className}>{children}</div>;
 }
 
 export default Margin;

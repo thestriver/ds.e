@@ -100,11 +100,11 @@
  *
  */
 .dse-width-none {
-  width: 0rem;
+  width: 0;
 }
 
 .dse-height-none {
-  height: 0rem;
+  height: 0;
 }
 
 .dse-width-xxxs {
