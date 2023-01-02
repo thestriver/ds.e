@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import '@ds.e/scss/lib/Utilities.css';
+import '@infovore.ds.e/scss/lib/Utilities.css';
 declare const _default: {
     title: string;
 };
