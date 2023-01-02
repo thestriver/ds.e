@@ -21,6 +21,6 @@
     "build": "yarn lerna run build",
     "dev": "yarn lerna run dev",
     "test": "yarn lerna run test",
-    "publish": "yarn test && yarn build && yarn lerna publish"
+    "publish": "yarn test && yarn build && npx lerna publish"
   }
 }
