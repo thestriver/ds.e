@@ -20,7 +20,7 @@
   },
   "scripts": {
     "lint": "stylelint \"./**/*.scss\"",
-    "prepare": "husky install",
+    "lint:fix": "yarn lint --fix",
     "build": "node src/scripts/build.js",
     "dev": "nodemon --watch src --exec yarn build -e scss"
   },
@@ -34,5 +34,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "fec75e3ae83a19af63cd07fb2edb02d14b49e574"
 }

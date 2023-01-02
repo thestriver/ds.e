@@ -2,6 +2,7 @@
   "name": "@infovore.ds.e/core",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "codevore <wannabeamumin@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "lerna": "^6.3.0"
